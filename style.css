@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores que serão incluidas */
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.navbar {
+    text-orientation: inherit;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-links {
+    text-decoration: none;
+}
