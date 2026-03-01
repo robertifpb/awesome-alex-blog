@@ -1,16 +1,57 @@
+:root {
+    --bg-dark: rgba(0, 0, 0, 0.87);
+}
+
+/* Preferência do usuário para mudar esquema de cor */
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --bg-dark: rgba(255, 255, 255, 0.87);
+    }
+    
+    /* Cor do tema do sistema (preferencial) */
+    html {
+        color-scheme: dark;
+    }
+}
+
+[light-dark-mode="light"] {
+    color-scheme: light;
+    --bg-dark: rgba(0, 0, 0, 0.87);
+
+    /* Cor do ícone do tema escolhido */
+    #theme-icon {
+        color: #f39c12;
+    }
+}
+
+[light-dark-mode="dark"] {
+    color-scheme: dark;
+    --bg-dark: rgba(255, 255, 255, 0.87);
+
+    /* Cor do ícone do tema escolhido */
+    #theme-icon {
+        color: #f1c40f;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    /* Cores que serão incluidas */
+html {
+    scroll-behavior: auto;
 }
 
-img {
-    width: 300px;
-    height: 200px;
+body {
+    font-family: "Inter", sans-serif;
+    font-size: auto;
+}
+
+div {
+    display: inline-block;
 }
 
 .navbar {
@@ -22,6 +63,8 @@ img {
     height: 30px;
 }
 
-.menu-links {
+.menu-links a {
     text-decoration: none;
 }
+
+
