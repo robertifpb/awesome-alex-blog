@@ -20,4 +20,6 @@ schemeSelect.addEventListener("change", function() {
     console.log("Modoa alteredo para:" , schemeSelect.value);
 });
 
-
+// Atualiza o ano no footer automaticamente
+const year = new Date().getFullYear();
+document.querySelector('.footer-year').textContent = year;
