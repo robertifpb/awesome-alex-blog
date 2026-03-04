@@ -23,11 +23,22 @@
         </a>
         <nav class="menu-links" aria-label="navigation-menu">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Posts</a></li>
-                <li><a href="/">About</a></li>
+                <li><a class="menu-active-link" href="/">Home</a></li>
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                <li><a class="menu-link" href="/">Posts</a></li>
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                <li><a class="menu-link" href="/">About</a></li>
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
             </ul>
         </nav>
+
+        <!-- Dark Mode -->
         <select name="themeMode" id="dark-mode-toggle">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
@@ -35,12 +46,18 @@
         </select>
 
         <i id="theme-icon" class="fas fa-desktop"></i>
+
+        <!-- Menu Mobile -->
+        <button class="mobile-menu" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
     <!-- Seção Principal -->
     <main>
         <!-- Autor -->
         <div class="content">
             <section class="autor">
+                <img class="author-image" src="/" alt="Autor image">
                 <h2 class="author-name">Awesome álex blog</h2>
                 <p class="author-bio">I am a student of Internet Systems at IFPB, driven by a passion for technology that began in my teens. Focused on front-end development and aiming to become a full-stack developer, I balance creativity and logic while developing practical projects in Python, JavaScript, and interface design, transforming learning into constant evolution.</p>
             </section>
@@ -73,26 +90,50 @@
                 </article> 
             </section>
         </div>
-        <!-- Rodapé -->
-        <footer class="footer">
-            <section class="social-icons">
-                <a href="https://github.com/robertifpb" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/arobertdev/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="/" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </section>
-
-            <section class="footer_copyright">
-                
-            </section>
-
-        </footer>
     </main>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Álex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Álex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Álex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <div class="footer_copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="/">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
