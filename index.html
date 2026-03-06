@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-teme="dark">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Awesome Álex blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,84 +13,80 @@
 </head>
 <body class="dark">
     <!-- Barra de navegação -->
-    <header class="navbar">
-        <a href="index.html" aria-label="Home Page">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
-                <title>Home</title>
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-        </a>
-        <nav class="menu-links" aria-label="navigation-menu">
-            <ul>
-                <li><a class="menu-active-link" href="/">Home</a></li>
-                <li class="menu-separator">
-                    <span>|</span>
-                </li>
-                <li><a class="menu-link" href="/">Posts</a></li>
-                <li class="menu-separator">
-                    <span>|</span>
-                </li>
-                <li><a class="menu-link" href="/">About</a></li>
-                <li class="menu-separator">
-                    <span>|</span>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+
+            <div class="nav-left">
+                <a href="index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">About</a></li>
+                <li class="divider"></li>
+                <!-- Dark Mode -->
+                <li>
+                    <button class="theme-btn">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
                 </li>
             </ul>
+
+            <!-- Menu Mobile -->
+            <button class="mobile-menu" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
         </nav>
-
-        <!-- Dark Mode -->
-        <select name="themeMode" id="dark-mode-toggle">
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-            <option value="system">System</option>
-        </select>
-
-        <i id="theme-icon" class="fas fa-desktop"></i>
-
-        <!-- Menu Mobile -->
-        <button class="mobile-menu" aria-label="Open menu">
-            <i class="fas fa-bars"></i>
-        </button>
     </header>
+
     <!-- Seção Principal -->
     <main>
         <!-- Autor -->
-        <div class="content">
+        <div class="container">
             <section class="autor">
-                <img class="author-image" src="/" alt="Autor image">
+                <img class="author-avatar" src="/" alt="Autor image">
                 <h2 class="author-name">Awesome álex blog</h2>
                 <p class="author-bio">I am a student of Internet Systems at IFPB, driven by a passion for technology that began in my teens. Focused on front-end development and aiming to become a full-stack developer, I balance creativity and logic while developing practical projects in Python, JavaScript, and interface design, transforming learning into constant evolution.</p>
             </section>
             <!-- Postagens -->
-            <section class="recent-posts">
-                <h3 class="recent-title">Recent Posts</h3>
+            <section class="posts-section" aria-labelledby="recent-posts">
+                <h3 id="recent-posts" class="section-title">Recent Posts</h3>
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="/">Estutura semântica do HTML:5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
                     </h4>
-                    <time class="post-item-info" datetime="2026-03-01T00:00:00"></time> <!-- Implementar com JS futuramente -->
+                    <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="/">Estutura semântica do HTML:5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
                     </h4>
-                    <time class="post-item-info" datetime="2026-03-01T00:00:00"></time> <!-- Implementar com JS futuramente -->
+                    <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="/">Estutura semântica do HTML:5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
                     </h4>
-                    <time class="post-item-info" datetime="2026-03-01T00:00:00"></time> <!-- Implementar com JS futuramente -->
+                    <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="/">Estutura semântica do HTML:5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
                     </h4>
-                    <time class="post-item-info" datetime="2026-03-01T00:00:00"></time> <!-- Implementar com JS futuramente -->
+                    <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
             </section>
         </div>
     </main>
+
     <!-- Rodapé -->
     <footer class="footer">
         <nav class="social-icons" aria-label="Social Media">
@@ -128,13 +124,13 @@
             </ul>
         </nav>
 
-        <div class="footer_copyright">
+        <div class="footer-copyright">
             <p>© <span class="footer-year"></span>
                 Álex Robert - Powered by <a href="/">Álex Blog Awesome</a>
             </p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
