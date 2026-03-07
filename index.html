@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,8 +34,8 @@
                 <li class="divider"></li>
                 <!-- Dark Mode -->
                 <li>
-                    <button class="theme-btn">
-                        <i class="fa-solid fa-sun"></i>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
                     </button>
                 </li>
             </ul>
@@ -51,35 +52,40 @@
     <main>
         <!-- Autor -->
         <div class="container">
-            <section class="autor">
-                <img class="author-avatar" src="/" alt="Autor image">
+            <section class="author">
+                <a href="https://www.linkedin.com/in/arobertdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin de Alex">
+                <img class="author-avatar" src="/img/perfil_img.png" alt="Autor image">
+                </a>
                 <h2 class="author-name">Awesome álex blog</h2>
-                <p class="author-bio">I am a student of Internet Systems at IFPB, driven by a passion for technology that began in my teens. Focused on front-end development and aiming to become a full-stack developer, I balance creativity and logic while developing practical projects in Python, JavaScript, and interface design, transforming learning into constant evolution.</p>
+                <p class="author-bio">I am a student of Internet Systems at IFPB, driven by a passion for technology that began in my teens.</p>
             </section>
             <!-- Postagens -->
             <section class="posts-section" aria-labelledby="recent-posts">
                 <h3 id="recent-posts" class="section-title">Recent Posts</h3>
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a> <!-- Implementar seção de postagem -->
                     </h4>
                     <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a> <!-- Implementar seção de postagem -->
                     </h4>
                     <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a> <!-- Implementar seção de postagem -->
                     </h4>
                     <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
                 <article class="post-item">
                     <h4 class="post-item-title">
-                        <a href="#">Estrutura semântica do HTML 5</a> <!-- Implementar seção de postagem -->
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a> <!-- Implementar seção de postagem -->
                     </h4>
                     <time datetime="2026-03-01">1 Mar 2026</time> <!-- Implementar com JS futuramente -->
                 </article> 
@@ -126,7 +132,7 @@
 
         <div class="footer-copyright">
             <p>© <span class="footer-year"></span>
-                Álex Robert - Powered by <a href="/">Álex Blog Awesome</a>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
             </p>
         </div>
     </footer>
