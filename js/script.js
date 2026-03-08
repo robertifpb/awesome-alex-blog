@@ -34,3 +34,17 @@ toggle.addEventListener("click", () => {
 // Atualiza o ano no footer automaticamente
 const year = new Date().getFullYear();
 document.querySelector('.footer-year').textContent = year;
+
+// Menu mobile
+const toggleBtn = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".nav-menu");
+
+toggleBtn.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+
+    const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+
+    toggleBtn.setAttribute("aria-expanded", !expanded);
+
+});
