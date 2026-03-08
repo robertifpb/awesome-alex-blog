@@ -1,11 +1,27 @@
-# Awesome Alex Blog 🚀
+<div align="center">
+  <h1>Awesome Alex Blog</h1>
+  <p>Blog pessoal desenvolvido como projeto de estudo e portfólio para praticar desenvolvimento front-end, organização de código e publicação com GitHub Pages.</p>
+  
+  ![Preview do Blog](img/preview.png)
+  <br>
+  
+  <img src="https://img.shields.io/github/languages/top/robertifpb/awesome-alex-blog?color=56BEB8&style=for-the-badge">
+  <img src="https://img.shields.io/github/last-commit/robertifpb/awesome-alex-blog?style=for-the-badge&color=56BEB8">
+  <img src="https://img.shields.io/github/commit-activity/m/robertifpb/awesome-alex-blog?style=for-the-badge&color=56BEB8">
+  <img src="https://img.shields.io/github/repo-size/robertifpb/awesome-alex-blog?style=for-the-badge&color=56BEB8">
+  
+  <br><br>
+  
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
 
-![Preview do Blog](img/preview.png)
+  <br><br>
+  🔗 Acesse o projeto:  
+    https://robertifpb.github.io/awesome-alex-blog/
 
-Blog pessoal desenvolvido como projeto de estudo e portfólio para praticar desenvolvimento front-end, organização de código e publicação com GitHub Pages.
-
-🔗 Acesse o projeto:  
-https://robertifpb.github.io/awesome-alex-blog/
+</div>
 
 ---
 
@@ -61,7 +77,8 @@ awesome-alex-blog/
 │ └── script.js
 │
 └── assets/
-└── images/ 
+└── images/
+  └── preview.png
 ```
 
 ---
