@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Awesome Alex blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="posts.html">Posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="divider"></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button
+                class="menu-toggle"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="author posts-hero">
+                <p class="about-eyebrow">Writing archive</p>
+                <h1 class="author-name">Posts</h1>
+                <p class="author-bio">
+                    A collection of notes, experiments, and reflections about web development, learning in public,
+                    and the projects I am building step by step.
+                </p>
+            </section>
+
+            <section class="posts-overview" aria-label="Posts overview">
+                <div class="about-card overview-card">
+                    <span class="overview-label">Published posts</span>
+                    <strong class="overview-value">04</strong>
+                    <p>Short articles documenting what I am learning and practicing.</p>
+                </div>
+
+                <div class="about-card overview-card">
+                    <span class="overview-label">Main topics</span>
+                    <strong class="overview-value">HTML, CSS, JS</strong>
+                    <p>Front-end fundamentals, small experiments, and study notes.</p>
+                </div>
+            </section>
+
+            <section class="posts-archive" aria-labelledby="all-posts">
+                <div class="archive-header">
+                    <h2 id="all-posts" class="section-title">All Posts</h2>
+                    <p>Latest notes and ideas organized in one place.</p>
+                </div>
+
+                <article class="post-card">
+                    <div class="post-card-meta">
+                        <time datetime="2026-03-18">18 Mar 2026</time>
+                        <span class="post-tag">HTML</span>
+                    </div>
+                    <h3 class="post-card-title"><a href="#">Building my first semantic blog structure</a></h3>
+                    <p class="post-card-excerpt">
+                        What I learned while organizing a homepage, navigation, sections, and footer with more semantic HTML.
+                    </p>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card-meta">
+                        <time datetime="2026-03-14">14 Mar 2026</time>
+                        <span class="post-tag">CSS</span>
+                    </div>
+                    <h3 class="post-card-title"><a href="#">Creating a clean dark mode with CSS variables</a></h3>
+                    <p class="post-card-excerpt">
+                        A simple approach to switching themes, keeping contrast readable, and reusing color tokens.
+                    </p>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card-meta">
+                        <time datetime="2026-03-09">9 Mar 2026</time>
+                        <span class="post-tag">JavaScript</span>
+                    </div>
+                    <h3 class="post-card-title"><a href="#">My first theme toggle with localStorage</a></h3>
+                    <p class="post-card-excerpt">
+                        Notes on how I used JavaScript to persist theme preferences and improve the experience on reload.
+                    </p>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card-meta">
+                        <time datetime="2026-03-01">1 Mar 2026</time>
+                        <span class="post-tag">Journey</span>
+                    </div>
+                    <h3 class="post-card-title"><a href="#">Why I started this blog as a student developer</a></h3>
+                    <p class="post-card-excerpt">
+                        A personal post about documenting progress, sharing discoveries, and staying consistent while learning.
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Alex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Alex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/Alexrobertjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Alex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
