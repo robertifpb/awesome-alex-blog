@@ -69,6 +69,7 @@ awesome-alex-blog/
 │
 ├── index.html
 ├── about.html
+├── posts.html
 │
 ├── css/
 │ └── style.css
@@ -76,8 +77,8 @@ awesome-alex-blog/
 ├── js/
 │ └── script.js
 │
-└── assets/
-└── images/
+└── img/
+  └── icon/
   └── preview.png
 ```
 
