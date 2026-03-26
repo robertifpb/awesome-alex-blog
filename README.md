@@ -70,6 +70,7 @@ awesome-alex-blog/
 ├── index.html
 ├── about.html
 ├── posts.html
+├── projects.html
 │
 ├── css/
 │ └── style.css
