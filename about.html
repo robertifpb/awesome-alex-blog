@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Awesome Alex blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li class="divider"></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button
+                class="menu-toggle"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="author about-hero">
+                <a href="https://www.linkedin.com/in/arobertdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin de Alex">
+                    <img class="author-avatar" src="img/perfil_img.png" alt="Author profile picture">
+                </a>
+                <p class="about-eyebrow">About the author</p>
+                <h1 class="author-name">Awesome Alex blog</h1>
+                <p class="author-bio">
+                    I am Alex Robert, a student of Internet Systems at IFPB, building this blog to share what I am learning
+                    about web development, technology, and the path of becoming a better developer.
+                </p>
+            </section>
+
+            <section class="about-content" aria-labelledby="about-story">
+                <div class="about-card">
+                    <h2 id="about-story" class="section-title">My Story</h2>
+                    <p>
+                        My interest in technology started in my teenage years, when curiosity turned into a real desire to
+                        understand how websites and digital products are built.
+                    </p>
+                    <p>
+                        Today, I study Internet Systems and use this space as a digital notebook to document discoveries,
+                        projects, experiments, and lessons learned along the way.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2 class="section-title">What You Will Find Here</h2>
+                    <ul class="about-list">
+                        <li>Notes about HTML, CSS, JavaScript, and front-end fundamentals.</li>
+                        <li>Reflections on my learning journey as a developer.</li>
+                        <li>Experiments, small projects, and ideas I want to keep evolving.</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2 class="section-title">Current Focus</h2>
+                    <p>
+                        Right now, I am focused on strengthening my base in web development, improving my practical skills,
+                        and creating projects that help me grow both technically and creatively.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p>
+                        If you want to follow my work or exchange ideas about technology, you can find me on
+                        <a href="https://www.linkedin.com/in/arobertdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        and <a href="https://github.com/robertifpb" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Alex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Alex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/Alexrobertjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Alex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
