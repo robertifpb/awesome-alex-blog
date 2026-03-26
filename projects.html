@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Awesome Alex blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="divider"></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button
+                class="menu-toggle"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="author projects-hero">
+                <p class="about-eyebrow">Portfolio highlights</p>
+                <h1 class="author-name">Projects</h1>
+                <p class="author-bio">
+                    A curated collection of projects that reflect my front-end practice, visual experiments,
+                    and the way I turn study into real interfaces.
+                </p>
+            </section>
+
+            <section class="projects-overview" aria-label="Projects overview">
+                <div class="about-card overview-card">
+                    <span class="overview-label">Featured builds</span>
+                    <strong class="overview-value">05</strong>
+                    <p>Portfolio projects, landing pages, and study builds that show my evolution in front-end.</p>
+                </div>
+
+                <div class="about-card overview-card">
+                    <span class="overview-label">Current stack</span>
+                    <strong class="overview-value">HTML, CSS, JS</strong>
+                    <p>Semantic markup, responsive layouts, UI polish, and experiments with interaction and structure.</p>
+                </div>
+            </section>
+
+            <section class="projects-grid" aria-labelledby="project-list">
+                <div class="archive-header">
+                    <h2 id="project-list" class="section-title">Project Cards</h2>
+                    <p>Selected repositories with direct links, context, and the main focus of each build.</p>
+                </div>
+
+                <article class="project-card featured-project">
+                    <div class="project-visual project-visual-blog">
+                        <span class="project-badge">Featured</span>
+                        <div class="project-window">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <strong>NextCent</strong>
+                        <p>A collaborative project that represents teamwork, interface building, and shared development.</p>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="post-tag">Team Project</span>
+                            <span class="project-status">Collaborative</span>
+                        </div>
+
+                        <h3 class="project-title">NextCent</h3>
+                        <p class="project-description">
+                            A repository developed with the ArenaDev project team. The public repository page does not expose
+                            a detailed description, so this card highlights it as a collaborative build centered on practical development.
+                        </p>
+
+                        <ul class="project-highlights">
+                            <li>Highlights work done in a collaborative environment.</li>
+                            <li>Represents experience building and evolving a shared codebase.</li>
+                            <li>Can be expanded later with a more specific stack and feature summary.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span><i class="fa-solid fa-people-group" aria-hidden="true"></i> Teamwork</span>
+                            <span><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</span>
+                            <span><i class="fa-solid fa-globe" aria-hidden="true"></i> Web Project</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ProjetoArenaDev/NextCent" target="_blank" rel="noopener noreferrer">View repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-visual-dashboard">
+                        <span class="project-badge">Landing Page</span>
+                        <strong>lading_powerexpress</strong>
+                        <p>A front-end landing page project focused on presentation, layout, and brand communication.</p>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="post-tag">Study Project</span>
+                            <span class="project-status">Published</span>
+                        </div>
+
+                        <h3 class="project-title">PowerExpress Landing Page</h3>
+                        <p class="project-description">
+                            Based on the repository name, this project appears to be a landing page built for the PowerExpress concept.
+                            It fits well here as a visual exercise in structure, sections, and front-end presentation.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                            <span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                            <span><i class="fa-solid fa-window-maximize" aria-hidden="true"></i> Landing Page</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/robertifpb/lading_powerexpress" target="_blank" rel="noopener noreferrer">View repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-visual-landing">
+                        <span class="project-badge">Game Landing</span>
+                        <strong>bestmmos</strong>
+                        <p>A themed landing page inspired by MMORPG aesthetics and built as an academic front-end project.</p>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="post-tag">Academic</span>
+                            <span class="project-status">Published</span>
+                        </div>
+
+                        <h3 class="project-title">BestMMOs</h3>
+                        <p class="project-description">
+                            Landing page de um MMORPG criada com HTML, CSS e JavaScript como projeto para a disciplina de
+                            Linguagem de Marcacao.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                            <span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                            <span><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://robertifpb.github.io/bestmmos/" target="_blank" rel="noopener noreferrer">View website</a>
+                            <a href="https://github.com/robertifpb/bestmmos" target="_blank" rel="noopener noreferrer">View repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-visual-dashboard">
+                        <span class="project-badge">Institutional Site</span>
+                        <strong>JefTur</strong>
+                        <p>An institutional landing page designed as a front-end study project with a more business-oriented tone.</p>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="post-tag">Front-end</span>
+                            <span class="project-status">Published</span>
+                        </div>
+
+                        <h3 class="project-title">JefTur</h3>
+                        <p class="project-description">
+                            Landing page institucional da JefTur desenvolvida como projeto de estudo em desenvolvimento front-end.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                            <span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                            <span><i class="fa-solid fa-object-group" aria-hidden="true"></i> UI</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://robertifpb.github.io/JefTur/" target="_blank" rel="noopener noreferrer">View website</a>
+                            <a href="https://github.com/robertifpb/JefTur" target="_blank" rel="noopener noreferrer">View repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-visual-blog">
+                        <span class="project-badge">Personal Project</span>
+                        <strong>awesome-alex-blog</strong>
+                        <p>A personal space to publish posts, present projects, and document progress in public.</p>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="post-tag">Portfolio</span>
+                            <span class="project-status">In progress</span>
+                        </div>
+
+                        <h3 class="project-title">Awesome Alex Blog</h3>
+                        <p class="project-description">
+                            Blog pessoal sobre tecnologia, criado como projeto de estudo de front-end usando HTML, CSS e JavaScript.
+                        </p>
+
+                        <ul class="project-highlights">
+                            <li>Includes pages for home, posts, about, and projects.</li>
+                            <li>Uses theme switching with localStorage support.</li>
+                            <li>Works as both portfolio and study journal.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                            <span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                            <span><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://robertifpb.github.io/awesome-alex-blog/" target="_blank" rel="noopener noreferrer">View website</a>
+                            <a href="https://github.com/robertifpb/awesome-alex-blog" target="_blank" rel="noopener noreferrer">View repository</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Alex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Alex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/Alexrobertjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Alex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
