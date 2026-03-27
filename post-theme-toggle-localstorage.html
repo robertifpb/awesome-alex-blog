@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first theme toggle with localStorage | Awesome Alex blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="posts.html">Posts</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="divider"></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button
+                class="menu-toggle"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container post-page">
+            <article class="post-article">
+                <header class="author post-article-header">
+                    <div class="post-article-meta">
+                        <time datetime="2026-03-09">9 Mar 2026</time>
+                        <span class="post-tag">JavaScript</span>
+                    </div>
+                    <h1 class="post-article-title">My first theme toggle with localStorage</h1>
+                    <p class="post-article-lead">
+                        The visual part of theme switching was only half of the experience. Saving the user's preference with JavaScript made the blog feel much more polished.
+                    </p>
+                </header>
+
+                <div class="post-content">
+                    <p>
+                        At first, my theme button changed the colors only until the page reloaded. That was enough to prove the interaction worked, but it was not a great experience. If I selected light mode and refreshed the page, everything went back to dark mode.
+                    </p>
+                    <p>
+                        That is when <code>localStorage</code> started to make sense to me. By saving the selected theme in the browser, I could read that value again on the next visit and restore the preference automatically.
+                    </p>
+
+                    <h2>The logic became simple</h2>
+                    <ul>
+                        <li>Check if a theme was previously stored.</li>
+                        <li>Apply the saved theme to the document.</li>
+                        <li>Update the icon so the interface matches the current state.</li>
+                        <li>Save the new value every time the user clicks the toggle.</li>
+                    </ul>
+
+                    <h2>Small interaction, better experience</h2>
+                    <p>
+                        This feature taught me that user experience is often built from small details. The button already worked visually, but persistence made it feel reliable. It also pushed me to think more carefully about page load behavior and default states.
+                    </p>
+                    <p>
+                        I like this kind of improvement because it is small enough to understand clearly, but meaningful enough to make the whole site feel more intentional.
+                    </p>
+                </div>
+
+                <nav class="post-navigation" aria-label="Post navigation">
+                    <a href="post-dark-mode-css-variables.html">Previous post</a>
+                    <a href="post-why-i-started-this-blog.html">Next post</a>
+                </nav>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Alex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Alex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/Alexrobertjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Alex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
