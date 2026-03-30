@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building my first semantic blog structure | Awesome Alex blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../img/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="../index.html" aria-label="Home Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <title>Home</title>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="./">Posts</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="divider"></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button
+                class="menu-toggle"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container post-page">
+            <article class="post-article">
+                <header class="author post-article-header">
+                    <div class="post-article-meta">
+                        <time datetime="2026-03-18">18 Mar 2026</time>
+                        <span class="post-tag">HTML</span>
+                    </div>
+                    <h1 class="post-article-title">Building my first semantic blog structure</h1>
+                    <p class="post-article-lead">
+                        While building this blog, I wanted the page structure to feel organized from the beginning. Semantic HTML helped me make the content easier to read, easier to maintain, and more meaningful.
+                    </p>
+                </header>
+
+                <div class="post-content">
+                    <p>
+                        My first instinct was to build everything with generic containers, but very quickly the page started to feel confusing. I had navigation, an author presentation, a list of posts, and a footer, but it was hard to see the purpose of each section just by reading the markup.
+                    </p>
+                    <p>
+                        Switching to semantic elements changed that. Using <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, and <code>footer</code> gave each part of the page a clear role. The document became easier to understand, both for me and for anyone who reads the code later.
+                    </p>
+
+                    <h2>Why semantic HTML mattered to me</h2>
+                    <p>
+                        The biggest advantage was clarity. When I returned to the file after a break, I could immediately see where the navigation ended and where the content started. That made small edits less stressful and reduced the chance of changing the wrong block.
+                    </p>
+                    <ul>
+                        <li>It improves organization and readability of the markup.</li>
+                        <li>It gives better structure for accessibility tools and search engines.</li>
+                        <li>It makes future styling easier because each part of the page already has meaning.</li>
+                    </ul>
+
+                    <h2>What I learned from this first version</h2>
+                    <p>
+                        I learned that structure should come before visual polish. Even a simple blog feels more solid when the HTML already communicates intent. Once the skeleton is well defined, CSS and JavaScript become easier to layer on top.
+                    </p>
+                    <p>
+                        This post is a reminder for my future self: when starting a new interface, I want to spend a little more time naming the parts correctly before moving into styling details.
+                    </p>
+                </div>
+
+                <nav class="post-navigation" aria-label="Post navigation">
+                    <a href="./">Back to all posts</a>
+                    <a href="post-dark-mode-css-variables.html">Next post</a>
+                </nav>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="social-icons" aria-label="Social Media">
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://github.com/robertifpb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub from Alex Robert"
+                    class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/arobertdev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin from Alex Robert"
+                    class="social-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/Alexrobertjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter from Alex Robert"
+                    class="social-icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© <span class="footer-year"></span>
+                Álex Robert - Powered by <a href="#">Álex Blog Awesome</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
