@@ -36,6 +36,8 @@ O projeto também serve como laboratório para experimentar:
 - Dark mode / Light mode
 - Componentização de layout
 - Organização de projeto front-end
+- Página de contato e apresentação profissional
+- Área dedicada para download de currículo
 
 ---
 
@@ -43,9 +45,12 @@ O projeto também serve como laboratório para experimentar:
 
 - 📄 Página inicial com listagem de posts
 - 👨‍💻 Página **About** com informações do autor
+- 💼 Página **Projects** com projetos em destaque
+- 📬 Página **Contact** com canais de contato
+- 📄 Área para **download de currículo**
 - 🌙 Suporte a **Dark Mode e Light Mode**
 - 📱 Layout **responsivo**
-- 🔗 Links para redes sociais
+- 🔗 Links para redes profissionais e e-mail
 - 📅 Data das postagens
 - 🧭 Navegação simples e acessível
 
@@ -70,6 +75,7 @@ awesome-alex-blog/
 ├── index.html
 ├── about.html
 ├── projects.html
+├── contact.html
 │
 ├── posts/
 │ ├── index.html
@@ -80,6 +86,10 @@ awesome-alex-blog/
 │
 ├── css/
 │ └── style.css
+│
+├── downloads/
+│ ├── CV-Alex Robert Braz-v1.1.pdf
+│ 
 │
 ├── js/
 │ └── script.js
@@ -114,7 +124,7 @@ cd awesome-alex-blog
 
 Este projeto faz parte da minha jornada de aprendizado em **desenvolvimento web**, com foco em evoluir para **Full Stack Developer**.
 
-Ele também é utilizado para registrar atividades e progresso durante meus estudos.
+Ele também é utilizado para registrar atividades, apresentar projetos, centralizar formas de contato e mostrar minha evolução durante os estudos.
 
 ---
 
