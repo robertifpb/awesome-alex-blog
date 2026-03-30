@@ -152,10 +152,6 @@ footer {
     color: var(--text-color);
 }
 
-.mobile-toggle:active {
-    opacity: 0.7;
-}
-
 .section-title {
     margin-bottom: 20px;
 }
@@ -863,7 +859,7 @@ footer {
 .post-item-title a {
     text-decoration: none;
     color: var(--text-color);
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 
 .post-item-title a:hover {
@@ -933,6 +929,17 @@ footer {
 .footer-copyright a:hover {
     transform: scale(1.1);
     text-decoration: underline;
+}
+
+/* Foco visível para navegação por teclado */
+.nav-menu a:focus,
+.theme-btn:focus,
+.menu-toggle:focus,
+.social-icon:focus,
+.post-card-title a:focus,
+.project-links a:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
 }
 
 /* MOBILE FIRST - RESPONSIVIDADE */
