@@ -69,12 +69,14 @@ awesome-alex-blog/
 │
 ├── index.html
 ├── about.html
-├── posts.html
 ├── projects.html
-├── post-dark-mode-css-variables.html
-├── post-semantic-blog-structure.html
-├── post-theme-toggle-localstorage.html
-├── post-why-i-started-this-blog.html
+│
+├── posts/
+│ ├── index.html
+│ ├── post-dark-mode-css-variables.html
+│ ├── post-semantic-blog-structure.html
+│ ├── post-theme-toggle-localstorage.html
+│ └── post-why-i-started-this-blog.html
 │
 ├── css/
 │ └── style.css
